@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+
+#wrapper #formBlock {
+    display: inline-block;
+    width: 38%;
+    margin-top: 15vh;
+    margin-left: 30%;
+    padding: 1%;
+    background-color: rgba(189, 210, 239, 0.82);
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 0px;
+}
+
+#wrapper #formBlock #title {
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-weight: bold;
+    font-size: 1.9em;
+    color: #434d56;
+    text-transform: uppercase;
+}
+
+#wrapper #formBlock #title span {
+    border-bottom: 2px solid #2b62a4;
+    padding: 1%;
+}
+
+#wrapper #formBlock #authForm {
+    width: 68%;
+    margin-left: 15%;
+    padding: 1%;
+}
+
+#wrapper #formBlock #authForm .field,
+#wrapper #formBlock #authForm .fieldIsValid,
+#wrapper #formBlock #authForm .fieldIsNotValid {
+    display: inline-block;
+    width: 92%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 4%;
+    font-size: 1.2em;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,0);
+    background-color: #fff;
+    outline: none;
+    color: #69879f;
+}
+
+#wrapper #formBlock #authForm .field {
+    background-color: rgb(255, 255, 255);
+}
+
+#wrapper #formBlock #authForm .fieldIsValid {
+    border: 2px solid rgb(127, 255, 95);
+}
+
+#wrapper #formBlock #authForm .fieldIsNotValid {
+    border: 2px solid rgba(255, 0, 0, 0.95);
+}
+
+#wrapper #formBlock #authForm #buttonBlock {
+    display: inline-block;
+    width: 92%;
+    margin-left: 8%;
+    min-height: 40px;
+}
+
+#wrapper #formBlock #authForm #buttonBlock #loginButton {
+    width: 90%;
+    padding: 5%;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #f7f7f7;
+    text-transform: uppercase;
+    background-color: rgb(101, 170, 252);
+    cursor: pointer;
+    display: none;
+}
+
+#wrapper #formBlock #authForm #buttonBlock #loginButton:hover {
+    background-color: rgba(101, 170, 252, 0.45);
+}
+
+.animation {
+    text-decoration: none;
+    -webkit-trasition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -o-transition: all.6s ease;
+    -ms-transition: all.6s ease;
+    transition: all.6s ease;
+}

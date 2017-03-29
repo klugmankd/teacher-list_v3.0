@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+@media (min-width: 1010px) {
+
+    #searchField {
+        width: 48%;
+        margin-left: 25%;
+    }
+
+    .field, .select_style {
+        width: 38%;
+        margin-left: 30%;
+        padding: 1%;
+    }
+}
+
+@media (max-width: 1009px) and (min-width: 750px){
+
+    #searchField {
+        width: 68%;
+        margin-left: 15%;
+    }
+
+    .field, .select_style {
+        width: 56%;
+        margin-left: 22%;
+        padding: 2%;
+    }
+}
+
+@media (max-width: 749px) and (min-width: 570px){
+    #searchField {
+        width: 78%;
+        margin-left: 10%;
+    }
+
+    .field, .select_style {
+        width: 66%;
+        margin-left: 17%;
+        padding: 2%;
+    }
+}
+
+@media (max-width: 569px) and (min-width: 300px) {
+    #searchField {
+        width: 78%;
+        margin-left: 10%;
+    }
+
+    .field, .select_style {
+        width: 66%;
+        margin-left: 17%;
+        padding: 2%;
+    }
+}
+
+#searchField {
+    cursor: text;
+}
+
+#searchField::-webkit-input-placeholder {
+    color: #69879f;
+}
+
+#searchField:focus, .select_style:focus {
+    background-color: rgb(201, 218, 242);
+}
+
+.field, .select_style {
+    background: #FFF;
+    overflow: hidden;
+    display: inline-block;
+    color: #69879f;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    -webkit-border-radius: 5px 4px 4px 5px/5px 5px 4px 4px;
+    -moz-border-radius: 5px 4px 4px 5px/5px 5px 4px 4px;
+    border-radius: 5px 4px 4px 5px/5px 5px 4px 4px;
+    -webkit-box-shadow: 0 0 5px rgba(123, 123, 123, 0.2);
+    -moz-box-shadow: 0 0 5px rgba(123,123,123,.2);
+    box-shadow: 0 0 5px rgba(123, 123, 123, 0.2);
+    border: solid 1px #DADADA;
+    position: relative;
+    cursor: pointer;
+    /*padding-right:20px;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.select_style span {
+    /*position: absolute;*/
+    /*right: 10px;*/
+    width: 20px;
+    height: 20px;
+    background: url(http://projects.authenticstyle.co.uk/niceselect/arrow.png) no-repeat;
+    /*top: 50%;*/
+    margin-top: -4px;
+}
+.select_style select {
+    -webkit-appearance: none;
+    background:none;
+    background:transparent;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    /*padding:7px 10px;*/
+}

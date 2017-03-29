@@ -1,0 +1,1245 @@
+@charset "UTF-8";
+
+* {
+    text-decoration: none;
+    outline: none;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+    GENERAL BLOCK
+    View all data of app
+*/
+#wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+/*
+    Adaptive
+    OBJECTIVE BLOCK
+*/
+
+@media (min-width: 1030px) {
+
+    #wrapper #objectiveBlock {
+        padding-top: 0;
+    }
+
+    #wrapper #objectiveBlock #nav-bar {
+        display: inline-block;
+        width: 90%;
+        margin-left: 5%;
+        font-size: 1em;
+    }
+
+    #wrapper #objectiveBlock #nav-bar #nav-icon {
+        display: none;
+    }
+
+    #wrapper #objectiveBlock #nav-bar #navButtonsList {
+        display: inline-block;
+        text-align: left;
+        width: 90%;
+        list-style: none;
+    }
+
+    #wrapper #objectiveBlock #nav-bar #navButtonsList #logo {
+        display: inline-block;
+    }
+
+    #wrapper #objectiveBlock #nav-bar #navButtonsList .navLink {
+        float: left;
+        margin-left: 1.5%;
+    }
+
+
+    #wrapper #objectiveBlock #nav-bar #navButtonsList .navButton {
+        float: right;
+    }
+
+    #wrapper #objectiveBlock #objectiveContentBlock {
+        width: 48%;
+        margin-left: 25%;
+        font-size: 1em;
+    }
+
+    #wrapper #searchBlock {
+        font-size: 1em;
+    }
+
+    #wrapper #taskBlock #tasksBlock {
+        width: 70%;
+        margin-left: 15%;
+        font-size: 1em;
+    }
+
+    #wrapper #taskBlock #tasksBlock #taskList .task {
+        width: 28%;
+        min-height: 50vh;
+        float: left;
+        margin-left: 4.5%;
+        text-align: center;
+    }
+
+    #wrapper #taskBlock #tasksBlock #taskList .task .line {
+        position: relative;
+        top: -18px;
+        z-index: 10;
+        display: inline-block;
+        width: 120%;
+        margin-left: 50%;
+        min-height: 15vh;
+        border-left: 2px dashed silver;
+        border-top: 2px dashed silver;
+    }
+
+    #wrapper #taskBlock #tasksBlock #taskList .task #lastLine {
+        border-top: none;
+    }
+
+    #wrapper #searchBlock #searchBlockContent #teacherProfileBlock #aboutTeacherList {
+        width: 56%;
+        margin-left: 20%;
+    }
+
+    #wrapper #searchBlock #searchBlockContent #teacherProfileBlock #aboutTeacherList #aboutTeacherListHeader #aboutTeacherListHeaderLeft .record .teacherProperty {
+        width: 60%;
+        margin-left: 27%;
+    }
+
+    #wrapper #searchBlock #searchBlockContent #teacherProfileBlock #aboutTeacherList .record .teacherProperty {
+        width: 80%;
+        margin-left: 16%;
+    }
+
+    #wrapper #taskBlock #tasksBlock #taskList .task .taskNumber {
+        padding: 4%;
+    }
+
+    #wrapper #searchBlock #searchBlockContent #searchResultBlock {
+        width: 68%;
+        margin-left: 15%;
+    }
+
+    #wrapper #searchBlock #searchBlockContent #searchResultBlock .teacherItem {
+        width: 22%;
+        margin-left: 6%;
+    }
+
+    #wrapper #searchBlock #searchBlockContent #teacherProfileBlock #aboutTeacherList .record .teacherProperty,
+    #wrapper #searchBlock #searchBlockContent #teacherProfileBlock #aboutTeacherList .record .teacherProperty {
+        font-size: 0.9em;
+    }
+
+    #wrapper #commentBlock #commentsList {
+        width: 78%;
+        margin-left: 10%;
+        padding: 1%;
+        font-size: 1em;
+    }
+
+    #wrapper #commentBlock #commentsList .comment {
+        display: inline-block;
+        text-align: left;
+        width: 40%;
+        margin-left: 5%;
+        font-size: 0.9em;
+    }
+
+    #wrapper #commentBlock #commentsList .comment .author .name {
+        font-size: 1.3em;
+    }
+
+    #wrapper #contactBlock #addCommentBlock {
+        width: 38%;
+        padding: 1%;
+        margin-left: 30%;
+    }
+
+}
+
+@media (max-width: 1029px) and (min-width: 760px) {
+
+    #wrapper #objectiveBlock {
+        padding-top: 0;
+    }
+
+    #wrapper #objectiveBlock #nav-bar {
+        display: inline-block;
+        width: 100%;
+        font-size: 0.8em;
+    }
+
+    #wrapper #objectiveBlock #nav-bar #nav-icon {
+        display: none;
+    }
+
+    #wrapper #objectiveBlock #nav-bar #navButtonsList {
+        display: inline-block;
+        text-align: left;
+        width: 90%;
+        list-style: none;
+    }
+
+    #wrapper #objectiveBlock #nav-bar #navButtonsList #logo {
+        display: inline-block;
+    }
+
+    #wrapper #objectiveBlock #nav-bar #navButtonsList .navLink {
+        float: left;
+        margin-left: 1.5%;
+    }
+
+
+    #wrapper #objectiveBlock #nav-bar #navButtonsList .navButton {
+        float: right;
+    }
+
+    #wrapper #objectiveBlock #objectiveContentBlock {
+        width: 68%;
+        margin-left: 15%;
+        font-size: 0.8em;
+    }
+
+    #wrapper #taskBlock #tasksBlock {
+        width: 80%;
+        margin-left: 10%;
+        font-size: 0.8em;
+    }
+
+    #wrapper #taskBlock #tasksBlock #taskList .task {
+        width: 28%;
+        min-height: 50vh;
+        float: left;
+        margin-left: 4.5%;
+        text-align: center;
+    }
+
+    #wrapper #taskBlock #tasksBlock #taskList .task .line {
+        position: relative;
+        top: -18px;
+        z-index: 10;
+        display: inline-block;
+        width: 120%;
+        margin-left: 50%;
+        min-height: 15vh;
+        border-left: 2px dashed silver;
+        border-top: 2px dashed silver;
+    }
+
+    #wrapper #taskBlock #tasksBlock #taskList .task #lastLine {
+        border-top: none;
+        width: 50%;
+    }
+
+    #wrapper #searchBlock #searchBlockContent #teacherProfileBlock #aboutTeacherList {
+        width: 76%;
+        margin-left: 10%;
+    }
+
+    #wrapper #searchBlock #searchBlockContent #teacherProfileBlock #aboutTeacherList #aboutTeacherListHeader #aboutTeacherListHeaderLeft .record .teacherProperty {
+        width: 60%;
+        margin-left: 27%;
+    }
+
+    #wrapper #searchBlock #searchBlockContent #teacherProfileBlock #aboutTeacherList .record .teacherProperty {
+        width: 80%;
+        margin-left: 16%;
+    }
+
+    #wrapper #taskBlock #tasksBlock #taskList .task .taskNumber {
+        padding: 3.5%;
+        font-size: 1em;
+    }
+
+    #wrapper #searchBlock {
+        font-size: 0.8em;
+    }
+
+    #wrapper #searchBlock #searchBlockContent #searchResultBlock {
+        width: 78%;
+        margin-left: 10%;
+    }
+
+    #wrapper #searchBlock #searchBlockContent #searchResultBlock .teacherItem {
+        width: 23%;
+        margin-left: 6%;
+    }
+
+    #wrapper #searchBlock #searchBlockContent #teacherProfileBlock #aboutTeacherList .record .teacherProperty,
+    #wrapper #searchBlock #searchBlockContent #teacherProfileBlock #aboutTeacherList .record .teacherProperty {
+        font-size: 0.7em;
+    }
+
+    #wrapper #commentBlock {
+        font-size: 0.8em;
+    }
+
+    #wrapper #commentBlock #commentsList {
+        width: 86%;
+        margin-left: 5%;
+        padding: 2%;
+    }
+
+    #wrapper #commentBlock #commentsList .comment {
+        display: inline-block;
+        width: 70%;
+        margin-left: 15%;
+        font-size: 1em;
+    }
+
+    #wrapper #commentBlock #commentsList .comment .author .name {
+        font-size: 1.3em;
+    }
+
+    #wrapper #contactBlock #addCommentBlock {
+        width: 56%;
+        padding: 2%;
+        margin-left: 20%;
+    }
+}
+
+@media (max-width: 759px) and (min-width: 570px) {
+
+    #wrapper #objectiveBlock {
+        padding-top: 0;
+    }
+
+    #wrapper #objectiveBlock #nav-bar {
+        display: inline-block;
+        width: 100%;
+        font-size: 0.6em;
+    }
+
+    #wrapper #objectiveBlock #nav-bar #nav-icon {
+        display: none;
+    }
+
+    #wrapper #objectiveBlock #nav-bar #navButtonsList {
+        display: inline-block;
+        text-align: left;
+        width: 90%;
+        list-style: none;
+    }
+
+    #wrapper #objectiveBlock #nav-bar #navButtonsList #logo {
+        display: inline-block;
+    }
+
+    #wrapper #objectiveBlock #nav-bar #navButtonsList .navLink {
+        float: left;
+        margin-left: 1.5%;
+    }
+
+
+    #wrapper #objectiveBlock #nav-bar #navButtonsList .navButton {
+        float: right;
+    }
+
+    #wrapper #objectiveBlock #objectiveContentBlock {
+        width: 78%;
+        margin-left: 10%;
+        font-size: 0.7em;
+    }
+
+    #wrapper #taskBlock #tasksBlock {
+        width: 90%;
+        margin-left: 5%;
+        font-size: 0.7em;
+    }
+
+    #wrapper #taskBlock #tasksBlock #taskList .task {
+        width: 28%;
+        min-height: 50vh;
+        float: left;
+        margin-left: 4.5%;
+        text-align: center;
+    }
+
+    #wrapper #taskBlock #tasksBlock #taskList .task .line {
+        position: relative;
+        top: -18px;
+        z-index: 10;
+        display: inline-block;
+        width: 120%;
+        margin-left: 50%;
+        min-height: 15vh;
+        border-left: 2px dashed silver;
+        border-top: 2px dashed silver;
+    }
+
+    #wrapper #taskBlock #tasksBlock #taskList .task #lastLine {
+        border-top: none;
+        width: 50%;
+    }
+
+    #wrapper #searchBlock #searchBlockContent #teacherProfileBlock #aboutTeacherList {
+        width: 86%;
+        margin-left: 5%;
+    }
+
+    #wrapper #searchBlock #searchBlockContent #teacherProfileBlock #aboutTeacherList #aboutTeacherListHeader #aboutTeacherListHeaderLeft .record .teacherProperty {
+        width: 60%;
+        margin-left: 27%;
+    }
+
+    #wrapper #searchBlock #searchBlockContent #teacherProfileBlock #aboutTeacherList .record .teacherProperty {
+        width: 80%;
+        margin-left: 16%;
+    }
+
+    #wrapper #searchBlock {
+        font-size: 0.7em;
+    }
+
+    #wrapper #taskBlock #tasksBlock #taskList .task .taskNumber {
+        padding: 2.5%;
+        font-size: 1em;
+    }
+
+    #wrapper #searchBlock #searchBlockContent #searchResultBlock {
+        width: 94%;
+        margin-left: 3%;
+    }
+
+    #wrapper #searchBlock #searchBlockContent #searchResultBlock .teacherItem {
+        width: 23%;
+        margin-left: 6%;
+    }
+
+    #wrapper #searchBlock #searchBlockContent #teacherProfileBlock #aboutTeacherList .record .teacherProperty,
+    #wrapper #searchBlock #searchBlockContent #teacherProfileBlock #aboutTeacherList .record .teacherProperty {
+        font-size: 0.7em;
+    }
+
+    #wrapper #commentBlock {
+        font-size: 0.7em;
+    }
+
+    #wrapper #commentBlock #commentsList {
+        width: 86%;
+        margin-left: 5%;
+        padding: 2%;
+    }
+
+    #wrapper #commentBlock #commentsList .comment {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #wrapper #commentBlock #commentsList .comment .author .name {
+        font-size: 1.1em;
+    }
+
+    #wrapper #contactBlock #addCommentBlock {
+        width: 66%;
+        padding: 2%;
+        margin-left: 15%;
+    }
+}
+
+@media (max-width: 569px) and (min-width: 300px) {
+
+    #wrapper #objectiveBlock {
+        padding-top: 80px;
+    }
+
+    #wrapper #objectiveBlock #nav-bar {
+        width: 94%;
+        padding: 3%;
+        /*font-size: 0.6em;*/
+        /*min-height: 30vh;*/
+        /*min-height: ;*/
+        position: fixed;
+        top: 0;
+        z-index: 999;
+    }
+
+    #wrapper #objectiveBlock #nav-bar #nav-icon {
+        display: inline-block;
+        float: right;
+        margin-right: 20px;
+    }
+
+    #wrapper #objectiveBlock #nav-bar #navButtonsList {
+        /*display: inline-block;*/
+        /*float: right;*/
+        font-size: 1em;
+        text-align: center;
+        width: 96%;
+        padding: 2%;
+        list-style: none;
+        display: none;
+    }
+
+    #wrapper #objectiveBlock #nav-bar #navButtonsList #logo {
+        display: none;
+    }
+
+    #wrapper #objectiveBlock #nav-bar #navButtonsList .navLink {
+        /*float: left;*/
+        /*margin-left: 1.5%;*/
+        width: 96%;
+        padding: 1%;
+        margin-left: 1%;
+    }
+
+    #wrapper #objectiveBlock #nav-bar #navButtonsList .navButton {
+        /*float: right;*/
+        width: 96%;
+        padding: 1%;
+        margin-left: 1%;
+    }
+
+    #wrapper #objectiveBlock #objectiveContentBlock {
+        width: 78%;
+        margin-left: 10%;
+        font-size: 0.7em;
+    }
+
+    #wrapper #taskBlock #tasksBlock {
+        width: 90%;
+        margin-left: 5%;
+        font-size: 0.7em;
+    }
+
+    #wrapper #taskBlock #tasksBlock #taskList #topTask {
+        width: 91%;
+        margin-left: 4.5%;
+        text-align: center;
+        margin-top: 40px;
+        /*padding-top: 40px;*/
+    }
+
+    #wrapper #taskBlock #tasksBlock #taskList .task {
+        width: 91%;
+        margin-left: 4.5%;
+        text-align: center;
+        margin-top: -50px;
+        padding-top: 0;
+        font-size: 1.3em;
+    }
+
+    #wrapper #taskBlock #tasksBlock #taskList .task .line {
+        position: relative;
+        top: -18px;
+        z-index: 10;
+        display: inline-block;
+        width: 50%;
+        margin-left: 50%;
+        min-height: 15vh;
+        border-left: 2px dashed silver;
+        /*border-top: 2px dashed silver;*/
+    }
+
+    #wrapper #taskBlock #tasksBlock #taskList .task .firstLine {
+        position: relative;
+        /*top: -18px;*/
+        z-index: 10;
+        display: inline-block;
+        width: 50%;
+        margin-left: 50%;
+        min-height: 13vh;
+        border-left: 2px dashed silver;
+        /*border-top: 2px dashed silver;*/
+    }
+
+    #wrapper #taskBlock #tasksBlock #taskList .task #lastLine {
+        border-top: none;
+        width: 50%;
+    }
+
+    #wrapper #searchBlock #searchBlockContent #teacherProfileBlock #aboutTeacherList {
+        width: 96%;
+        padding: 2%;
+        /*margin-left: 2%;*/
+    }
+
+    #wrapper #searchBlock #searchBlockContent #teacherProfileBlock #aboutTeacherList #aboutTeacherListHeader #aboutTeacherListHeaderLeft .record .teacherProperty {
+        width: 52%;
+        margin-left: 40%;
+    }
+
+    #wrapper #searchBlock #searchBlockContent #teacherProfileBlock #aboutTeacherList .record .teacherProperty {
+        width: 72%;
+        margin-left: 23%;
+    }
+
+    #wrapper #searchBlock {
+        font-size: 0.7em;
+    }
+
+    #wrapper #taskBlock #tasksBlock #taskList .task .taskNumber {
+        padding: 2.5%;
+        font-size: 1em;
+    }
+
+    #wrapper #searchBlock #searchBlockContent #searchResultBlock {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    #wrapper #searchBlock #searchBlockContent #searchResultBlock .teacherItem {
+        width: 74%;
+        padding: 3%;
+        margin-left: 10%;
+    }
+
+    #wrapper #searchBlock #searchBlockContent #teacherProfileBlock #aboutTeacherList .record .teacherProperty,
+    #wrapper #searchBlock #searchBlockContent #teacherProfileBlock #aboutTeacherList .record .teacherProperty {
+        font-size: 1em;
+        width: 60%;
+    }
+
+    #wrapper #commentBlock {
+        font-size: 0.7em;
+    }
+
+    #wrapper #commentBlock #commentsList {
+        width: 86%;
+        margin-left: 5%;
+        padding: 2%;
+    }
+
+    #wrapper #commentBlock #commentsList .comment {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #wrapper #commentBlock #commentsList .comment .author .name {
+        font-size: 1.1em;
+    }
+
+    #wrapper #contactBlock #addCommentBlock {
+        width: 66%;
+        padding: 2%;
+        margin-left: 15%;
+    }
+}
+
+/*
+    OBJECTIVE BLOCK
+    View data about objective of app
+*/
+#wrapper #objectiveBlock {
+    width: 100%;
+    background: url("../img/overviewBackgroud1.jpg") fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding-bottom: 80px;
+}
+
+#wrapper #objectiveBlock #nav-bar {
+    /*display: inline-block;*/
+    background-color: rgba(255, 255, 255, .7);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#wrapper #objectiveBlock #nav-bar #navButtonsList button {
+    background-color: rgba(0,0,0,0);
+    outline: none;
+    border: none;
+}
+
+#wrapper #objectiveBlock #nav-bar #navButtonsList #logo {
+    font-size: 1.2em;
+    font-weight: bold;
+    border-bottom: 2px dashed rgb(101, 170, 252);
+    float: left;
+    color: rgb(44, 140, 255);
+}
+
+#wrapper #objectiveBlock #nav-bar #navButtonsList #logo #rightSide {
+    color: #434d56;
+}
+
+#wrapper #objectiveBlock #nav-bar #navButtonsList .navButtons {
+    display: inline-block;
+    padding: 1%;
+    text-transform: uppercase;
+}
+
+#wrapper #objectiveBlock #nav-bar #navButtonsList .navLink {
+    font-size: 1em;
+    font-weight: bold;
+    color: #69879f;
+    border: 3px solid rgba(255, 255, 255, 0);
+}
+
+#wrapper #objectiveBlock #nav-bar #navButtonsList .navLink:hover {
+    border-bottom: 3px solid rgb(101, 170, 252);
+    color: #63a3d5;
+    cursor: pointer;
+}
+
+#wrapper #objectiveBlock #nav-bar #navButtonsList .navButton {
+    display: inline-block;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(101, 170, 252);
+    border: 2px solid rgb(101, 170, 252);
+    padding: 1% 3.5%;
+}
+
+#wrapper #objectiveBlock #nav-bar #navButtonsList .navButton:hover {
+    background-color: rgb(101, 170, 252);
+    cursor: pointer;
+    color: #f7f7f7;
+}
+
+#wrapper #objectiveBlock #objectiveContentBlock {
+    padding: 1%;
+    border-left: 3px solid #f7f7f7;
+    border-top: 3px solid #f7f7f7;
+    background-color: rgba(255, 255, 255, .7);
+    margin-top: 80px;
+}
+
+#wrapper #objectiveBlock #objectiveContentBlock #objective {
+    width: 88%;
+    padding: 1%;
+    margin-left: 5%;
+}
+
+#wrapper #objectiveBlock #objectiveContentBlock #objective #objectiveTitle {
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#wrapper #objectiveBlock #objectiveContentBlock #objective p {
+    color: rgb(48, 99, 160);
+    text-align: justify;
+    font-size: 1.1em;
+    font-family: "Abyssinica SIL";
+}
+
+#wrapper #objectiveBlock #objectiveContentBlock #objective p span {
+    font-size: 1.4em;
+}
+
+/*
+    TASKS BLOCK
+    View data about tasks of app
+*/
+#wrapper #taskBlock {
+    background-color: #fdfdfd;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#wrapper #taskBlock #tasksBlock #taskTitle {
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#wrapper #taskBlock #tasksBlock #taskList {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+#wrapper #taskBlock #tasksBlock #taskList .task .taskNumber {
+    position: relative;
+    top: 0;
+    z-index: 229;
+    text-align: center;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 3px solid rgb(101, 170, 252);
+    color: rgb(101, 170, 252);
+    font-weight: bold;
+    font-size: 1em;
+    font-family: Arial;
+    background-color: #fdfdfd;
+}
+
+#wrapper #taskBlock #tasksBlock #taskList .task .taskItem {
+    display: inline-block;
+    width: 90%;
+    margin-top: -3vh;
+    margin-bottom: 10vh;
+    text-align: center;
+}
+
+#wrapper #taskBlock #tasksBlock #taskList .task .taskItem .taskIconBackground {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    padding: 5%;
+    border-radius: 50%;
+    background-color: rgba(129, 158, 181, 0.3);
+}
+
+#wrapper #taskBlock #tasksBlock #taskList .task .taskItem .taskIconBackground .taskIcon {
+    display: inline-block;
+    width: 80%;
+    height: 80%;
+    margin-top: 10%;
+    border-radius: 30%;
+    background-color: white;
+    box-shadow: 2px 2px 3px 0px;
+}
+
+#wrapper #taskBlock #tasksBlock #taskList .task .taskItem .taskIconBackground .taskIcon img {
+    display: inline-block;
+    width: 50%;
+    height: 50%;
+    margin-top: 25%;
+}
+
+#wrapper #taskBlock #tasksBlock #taskList .task .taskItem .taskOverview {
+    width: 100%;
+    min-height: 10vh;
+    max-height: 20vh;
+    font-family: 'Open Sans',Arial,sans-serif;
+}
+
+#wrapper #taskBlock #tasksBlock #taskList .task .taskItem .taskOverview .taskTitle {
+    width: 96%;
+    padding: 7% 2% 5.5%;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #656060;
+}
+
+#wrapper #taskBlock #tasksBlock #taskList .task .taskItem .taskOverview .taskDescription {
+    width: 96%;
+    padding: 3.5% 2%;
+    font-size: 0.8em;
+    color: #737373;
+}
+
+
+/*
+    SEARCH BLOCK
+    View data on user's request
+*/
+#wrapper #searchBlock {
+    width: 100%;
+    background-color: rgb(253, 253, 253);
+    padding-bottom: 80px;
+}
+
+#wrapper #searchBlock #searchBlockContent {
+    width: 88%;
+    padding: 1%;
+    margin-left: 5%;
+}
+
+#wrapper #searchBlock #searchBlockContent #searchTitle,
+#wrapper #searchBlock #searchBlockContent #searchResultTitle,
+#wrapper #searchBlock #searchBlockContent #profileTitle {
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#wrapper #searchBlock #searchBlockContent #searchParameterBlock {
+    display: inline-block;
+    width: 100%;
+}
+
+#wrapper #searchBlock #searchBlockContent #teacherProfileBlock {
+
+}
+
+#wrapper #searchBlock #searchBlockContent #teacherProfileBlock #aboutTeacherList {
+    padding: 2%;
+    background-color: rgb(201, 218, 242);
+    box-shadow: 1px 1px 2px 0px;
+    color: #434d56;
+}
+
+#wrapper #searchBlock #searchBlockContent #teacherProfileBlock #aboutTeacherList .record {
+    display: inline-block;
+    width: 100%;
+}
+
+#wrapper #searchBlock #searchBlockContent #teacherProfileBlock #aboutTeacherList #aboutTeacherListHeader {
+    display: inline-block;
+    width: 100%;
+}
+
+#wrapper #searchBlock #searchBlockContent #teacherProfileBlock #aboutTeacherList #aboutTeacherListHeader #aboutTeacherListHeaderLeft {
+    float: left;
+    width: 60%;
+}
+
+#wrapper #searchBlock #searchBlockContent #teacherProfileBlock #aboutTeacherList #aboutTeacherListHeader #aboutTeacherListHeaderLeft .record .label {
+    float: left;
+    padding: 3%;
+    display: inline-block;
+    background-color: white;
+    box-shadow: 2px 2px 3px 0px;
+    margin-top: 10px;
+}
+
+#wrapper #searchBlock #searchBlockContent #teacherProfileBlock #aboutTeacherList #aboutTeacherListHeader #aboutTeacherListHeaderLeft .record .teacherProperty {
+    /*border-radius: 10px;*/
+    background-color: white;
+    box-shadow: 2px 2px 3px 0px;
+    margin-top: 10px;
+    padding: 7% 2%;
+    font-family: "Century Schoolbook L";
+}
+
+
+#wrapper #searchBlock #searchBlockContent #teacherProfileBlock #aboutTeacherList #aboutTeacherListHeader #aboutTeacherListHeaderRight {
+    float: right;
+    width: 38%;
+}
+
+#wrapper #searchBlock #searchBlockContent #teacherProfileBlock #aboutTeacherList #aboutTeacherListHeader #aboutTeacherListHeaderRight .photo {
+    width: 96%;
+    padding: 2%;
+    margin-top: 20px;
+    min-height: 220px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#wrapper #searchBlock #searchBlockContent #teacherProfileBlock #aboutTeacherList .record .label {
+    float: left;
+    padding: 1.5%;
+    display: inline-block;
+    border-radius: 30%;
+    background-color: white;
+    box-shadow: 2px 2px 3px 0px;
+    margin-top: 10px;
+}
+
+#wrapper #searchBlock #searchBlockContent #teacherProfileBlock #aboutTeacherList .record .teacherProperty {
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 3px 0px;
+    margin-top: 10px;
+    padding: 4% 2%;
+    font-family: "Century Schoolbook L";
+}
+
+
+#wrapper #searchBlock #searchBlockContent #searchResultBlock {
+    min-height: 200px;
+    padding: 20px 1%;
+    background-color: rgb(201, 218, 242);
+    color: #434d56;
+    box-shadow: 1px 1px 2px 0px;
+}
+
+#wrapper #searchBlock #searchBlockContent #searchResultBlock .teacherItem {
+    display: inline-block;
+    padding: 1%;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px 0px;
+}
+
+#wrapper #searchBlock #searchBlockContent #searchResultBlock .teacherItem:hover {
+    background-color: rgba(225, 238, 255, 0.82);
+}
+
+#wrapper #searchBlock #searchBlockContent #searchResultBlock .teacherItem .photo {
+    margin-left: 15%;
+    margin-bottom: 20px;
+    width: 70%;
+    min-height: 100px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#wrapper #searchBlock #searchBlockContent #searchResultBlock .teacherItem .fullName {
+    border-top: 1px solid silver;
+    padding: 1%;
+}
+
+/*
+    COMMENT BLOCK
+    View user's comments about app
+*/
+#wrapper #commentBlock {
+    width: 100%;
+    background-color: #fdfdfd;
+    padding-bottom: 80px;
+}
+
+#wrapper #commentBlock #commentTitle {
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#wrapper #commentBlock #commentsList .comment .sign {
+    padding: 2%;
+    font-size: 40px;
+    color: #2b62a4;
+}
+
+#wrapper #commentBlock #commentsList .comment .content {
+    background-color: white;
+    padding: 3%;
+    box-shadow: 1px 1px 2px 0px;
+    color: #69879f;
+}
+
+#wrapper #commentBlock #commentsList .comment .author {
+    width: 90%;
+    margin-top: 10px;
+    padding: 5%;
+    text-align: center;
+    border-radius: 10px;
+    color: #2b62a4;
+}
+
+#wrapper #commentBlock #commentsList .comment .author .photo {
+    float: left;
+    width: 50px;
+    height: 50px;
+    padding: 1%;
+    border-radius: 50%;
+}
+
+#wrapper #commentBlock #commentsList .comment .author .name {
+    padding: 4%;
+}
+
+/*
+    CONTACT BLOCK
+*/
+#wrapper #contactBlock {
+    width: 100%;
+    padding-bottom: 40px;
+    background-color: #fdfdfd;
+}
+
+#wrapper #contactBlock #addCommentBlock {
+    background-color: rgba(189, 210, 239, 0.82);
+    box-shadow: 1px 1px 2px 0px;
+}
+
+#wrapper #contactBlock #addCommentBlock #contactTitle {
+    text-align: center;
+    padding-top: 3%;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #434d56;
+    text-transform: uppercase;
+}
+
+#wrapper #contactBlock #addCommentBlock #contactFieldBlock {
+    width: 68%;
+    padding: 1%;
+    margin-left: 15%;
+}
+
+#wrapper #contactBlock #addCommentBlock #contactFieldBlock #authorCommentName,
+#wrapper #contactBlock #addCommentBlock #contactFieldBlock #contactMessage {
+    margin-top: 15px;
+    width: 92%;
+    padding: 4%;
+    display: inline-block;
+    outline: none;
+    font-size: 1.2em;
+    color: #69879f;
+}
+
+#wrapper #contactBlock #addCommentBlock #contactFieldBlock #authorCommentName:focus,
+#wrapper #contactBlock #addCommentBlock #contactFieldBlock #contactMessage:focus {
+    background-color: rgba(225, 238, 255, 0.82);
+}
+
+#wrapper #contactBlock #addCommentBlock #contactFieldBlock #contactMessage {
+    resize: none;
+    height: 100px;
+}
+
+#wrapper #contactBlock #addCommentBlock #contactFieldBlock #contactButton {
+    width: 90%;
+    margin-left: 5%;
+    padding: 4%;
+    margin-top: 15px;
+    outline: none;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid rgb(101, 170, 252);
+    background-color: rgb(101, 170, 252);
+    cursor: pointer;
+    color: #f7f7f7;
+}
+
+#wrapper #contactBlock #addCommentBlock #contactFieldBlock #contactButton:hover {
+    background-color: rgba(101, 170, 252, 0.45);
+    border: 2px solid rgba(101, 170, 252, 0);
+}
+
+
+/*#wrapper #contactBlock #addCommentBlock #contactFieldBlock .field,*/
+/*#wrapper #contactBlock #addCommentBlock #contactFieldBlock .fieldIsValid,*/
+/*#wrapper #contactBlock #addCommentBlock #contactFieldBlock .fieldIsNotValid {*/
+    /*display: inline-block;*/
+    /*width: 92%;*/
+    /*margin-top: 15px;*/
+    /*margin-bottom: 15px;*/
+    /*padding: 4%;*/
+    /*font-size: 1.2em;*/
+    /*border-radius: 10px;*/
+    /*border: 2px solid rgba(0,0,0,0);*/
+    /*background-color: #fff;*/
+    /*outline: none;*/
+    /*color: #69879f;*/
+/*}*/
+
+#messageBlock {
+    color: #f7f7f7;
+    width: 96%;
+    padding: 2%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#wrapper #contactBlock #addCommentBlock #contactFieldBlock .contactField {
+    border: 2px solid rgba(0,0,0,0);
+}
+
+#wrapper #contactBlock #addCommentBlock #contactFieldBlock .contactFieldIsValid {
+    border: 2px solid rgb(127, 255, 95);
+}
+
+#wrapper #contactBlock #addCommentBlock #contactFieldBlock .contactFieldIsNotValid {
+    border: 2px solid rgba(255, 0, 0, 0.95);
+}
+
+/*
+    Others styles
+*/
+.animation {
+    text-decoration: none;
+    -webkit-trasition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -o-transition: all.6s ease;
+    -ms-transition: all.6s ease;
+    transition: all.6s ease;
+}
+
+.title {
+    color: #434d56;
+    text-transform: uppercase;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.title span {
+    border-top: 2px dashed #2b62a4;
+    padding: 1%;
+}
+
+
+
+
+#wrapper #objectiveBlock #nav-bar #nav-icon {
+    width: 30px;
+    height: 40px;
+    position: relative;
+    /*float: right;*/
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+#wrapper #objectiveBlock #nav-bar #nav-icon span {
+    display: inline-block;
+    position: absolute;
+    height: 7px;
+    width: 100%;
+    background: #65aafc;
+    /*border-radius: 9px;*/
+    opacity: 1;
+    left: 0;
+    /*top: 20px;*/
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+#wrapper #objectiveBlock #nav-bar #nav-icon span:nth-child(1) {
+    top: 0;
+}
+
+#wrapper #objectiveBlock #nav-bar #nav-icon span:nth-child(2) {
+    top: 18px;
+}
+
+#wrapper #objectiveBlock #nav-bar #nav-icon span:nth-child(3) {
+    top: 36px;
+}
+
+#wrapper #objectiveBlock #nav-bar #nav-icon.open span:nth-child(1) {
+    top: 18px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+#wrapper #objectiveBlock #nav-bar #nav-icon.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+}
+
+#wrapper #objectiveBlock #nav-bar #nav-icon.open span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+/*#nav-bar #menu {*/
+    /*!*display: inline-block;*!*/
+    /*width: 90%;*/
+    /*margin-top: 10vh;*/
+/*}*/
+
+/*#nav-bar #menu #links {*/
+    /*list-style-type: none;*/
+    /*color: #f7f7f7;*/
+    /*!*display: inline-block;*!*/
+    /*float: right;*/
+    /*!*font-size: 0.7em;*!*/
+/*}*/

@@ -1,0 +1,4 @@
+.idea/
+vendor/
+admin_configuration.php
+db_configuration.php

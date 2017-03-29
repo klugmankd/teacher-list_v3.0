@@ -1,0 +1,320 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+a {
+    text-decoration: none;
+}
+
+#wrapper {
+    width: 100%;
+}
+
+#wrapper #nav-bar {
+    text-align: center;
+    background-color: rgba(71, 148, 255, 0.82);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom: 2px solid rgba(189, 210, 239, 0.82);
+}
+
+#wrapper #nav-bar .navLink,
+#wrapper #nav-bar .navLink a {
+    display: inline-block;
+    text-align: center;
+    padding: 2%;
+    color: #f7f7f7;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#wrapper #nav-bar .navLink:hover {
+    background-color: rgba(189, 210, 239, 0.82);
+}
+
+#wrapper #contentBlock {
+    width: 78%;
+    padding: 1%;
+    margin-left: 10%;
+    background-color: rgba(189, 210, 239, 0.82);
+    margin-top: 20px;
+    border-radius: 5px;
+    min-height: 50vh;
+}
+
+#wrapper #contentBlock .teacherItem,
+#wrapper #contentBlock #searchResultBlock .teacherItem {
+    display: inline-block;
+    width: 15%;
+    padding: 1%;
+    margin-left: 6%;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 2px 2px 3px 0px;
+}
+
+#wrapper #contentBlock .teacherItem .photo,
+#wrapper #contentBlock #searchResultBlock .teacherItem .photo {
+    margin-left: 15%;
+    margin-bottom: 20px;
+    width: 70%;
+    min-height: 100px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#wrapper #contentBlock .teacherItem .fullName,
+#wrapper #contentBlock #searchResultBlock .teacherItem .fullName {
+    border-top: 1px solid silver;
+    padding: 1%;
+}
+
+#wrapper #contentBlock #listOfComments {
+    width: 98%;
+    padding: 1%;
+    list-style-type: none;
+}
+
+#wrapper #contentBlock #teacherProfileBlock #aboutTeacherList {
+    width: 56%;
+    margin-left: 20%;
+    padding: 2%;
+    background-color: rgb(201, 218, 242);
+    border-radius: 15px;
+}
+
+#wrapper #contentBlock #teacherProfileBlock #aboutTeacherList .record {
+    display: inline-block;
+    width: 100%;
+}
+
+#wrapper #contentBlock #teacherProfileBlock #aboutTeacherList #aboutTeacherListHeader {
+    display: inline-block;
+    width: 100%;
+}
+
+#wrapper #searchBlock #searchBlockContent #teacherProfileBlock #aboutTeacherList #aboutTeacherListHeader #aboutTeacherListHeaderLeft {
+    float: left;
+    width: 60%;
+}
+
+#wrapper #contentBlock #teacherProfileBlock #aboutTeacherList #aboutTeacherListHeader #aboutTeacherListHeaderLeft .record .label {
+    float: left;
+    padding: 3%;
+    display: inline-block;
+    border-radius: 30%;
+    background-color: white;
+    box-shadow: 2px 2px 3px 0px;
+    margin-top: 10px;
+}
+
+#wrapper #contentBlock #teacherProfileBlock #aboutTeacherList #aboutTeacherListHeader #aboutTeacherListHeaderLeft .record .teacherProperty {
+    width: 60%;
+    margin-left: 27%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 3px 0px;
+    margin-top: 10px;
+    padding: 7% 2%;
+    font-family: "Century Schoolbook L";
+}
+
+
+#wrapper #contentBlock #teacherProfileBlock #aboutTeacherList #aboutTeacherListHeader #aboutTeacherListHeaderRight {
+    float: right;
+    width: 38%;
+}
+
+#wrapper #contentBlock #teacherProfileBlock #aboutTeacherList #aboutTeacherListHeader #aboutTeacherListHeaderRight .photo {
+    width: 96%;
+    padding: 2%;
+    margin-top: 20px;
+    min-height: 220px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#wrapper #contentBlock #teacherProfileBlock #aboutTeacherList .record .label {
+    float: left;
+    padding: 1.5%;
+    display: inline-block;
+    border-radius: 30%;
+    background-color: white;
+    box-shadow: 2px 2px 3px 0px;
+    margin-top: 10px;
+}
+
+#wrapper #contentBlock #teacherProfileBlock #aboutTeacherList .record .teacherProperty {
+    width: 80%;
+    margin-left: 16%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 3px 0px;
+    margin-top: 10px;
+    padding: 2% 1%;
+    font-family: "Century Schoolbook L";
+}
+
+.editField {
+    display: inline-block;
+    width: 90%;
+    /*cursor: text;*/
+    outline: none;
+    background: #FFF;
+    overflow: hidden;
+    color: #69879f;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    -webkit-border-radius: 5px 4px 4px 5px/5px 5px 4px 4px;
+    -moz-border-radius: 5px 4px 4px 5px/5px 5px 4px 4px;
+    border-radius: 5px 4px 4px 5px/5px 5px 4px 4px;
+    -webkit-box-shadow: 0 0 5px rgba(123, 123, 123, 0.2);
+    -moz-box-shadow: 0 0 5px rgba(123,123,123,.2);
+    box-shadow: 0 0 5px rgba(123, 123, 123, 0.2);
+    border: solid 1px #DADADA;
+    position: relative;
+    padding: 1%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+
+#wrapper #contentBlock #listOfComments .commentItem {
+    display: inline-block;
+    width: 94%;
+    padding: 1%;
+    margin-left: 2%;
+    font-size: 1.1em;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 2px 2px 3px 0px;
+}
+
+#wrapper #contentBlock #listOfComments .commentItem .author {
+    text-align: center;
+    width: 96%;
+    padding: 2%;
+    border-bottom: 2px dashed silver;
+    color: #2b62a4;
+}
+
+#wrapper #contentBlock #listOfComments .commentItem .content {
+    padding: 2%;
+    color: #69879f;
+    border: 2px dashed silver;
+    border-top: none;
+}
+
+#wrapper #contentBlock #listOfComments .commentItem .approveMenu {
+    /*display: inline-block;*/
+    /*text-align: right;*/
+    float: right;
+    width: 15%;
+    /*padding: 2%;*/
+}
+
+#wrapper #contentBlock #listOfComments .commentItem .approveMenu .approve,
+#wrapper #contentBlock #listOfComments .commentItem .approveMenu .disapprove {
+    display: inline-block;
+    text-align: center;
+    margin-right: 20px;
+    color: #63a3d5;
+    border: 2px dashed rgba(0,0,0,0);
+    padding: 2%;
+}
+
+#wrapper #contentBlock #listOfComments .commentItem .approveMenu .approve:hover,
+#wrapper #contentBlock #listOfComments .commentItem .approveMenu .disapprove:hover {
+    border-bottom: 2px dashed silver;
+    cursor: pointer;
+}
+
+.animation {
+    text-decoration: none;
+    -webkit-trasition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -o-transition: all.6s ease;
+    -ms-transition: all.6s ease;
+    transition: all.6s ease;
+}
+
+.field {
+    width: 48%;
+    /*cursor: text;*/
+    outline: none;
+    margin-left: 25%;
+    background: #FFF;
+    overflow: hidden;
+    display: inline-block;
+    color: #69879f;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    -webkit-border-radius: 5px 4px 4px 5px/5px 5px 4px 4px;
+    -moz-border-radius: 5px 4px 4px 5px/5px 5px 4px 4px;
+    border-radius: 5px 4px 4px 5px/5px 5px 4px 4px;
+    -webkit-box-shadow: 0 0 5px rgba(123, 123, 123, 0.2);
+    -moz-box-shadow: 0 0 5px rgba(123,123,123,.2);
+    box-shadow: 0 0 5px rgba(123, 123, 123, 0.2);
+    border: solid 1px #DADADA;
+    position: relative;
+    padding: 1%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+.buttons:hover {
+    background-color: rgba(101, 170, 252, 0.45);
+    border: 2px solid rgba(101, 170, 252, 0);
+}
+
+.buttons {
+    width: 48%;
+    margin-left: 26%;
+    padding: 1%;
+    margin-top: 15px;
+    outline: none;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid rgb(101, 170, 252);
+    border-radius: 4px;
+    background-color: rgb(101, 170, 252);
+    cursor: pointer;
+    color: #f7f7f7;
+}
+
+.title {
+    color: #434d56;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.title span {
+    border-bottom: 2px solid #2b62a4;
+    padding: 1%;
+}
+
+#message {
+    width: 98%;
+    padding: 1%;
+    text-align: center;
+    color: #69879f;
+    font-weight: bold;
+    font-size: 1em;
+}
+
